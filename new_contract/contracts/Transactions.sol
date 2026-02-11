@@ -9,6 +9,7 @@ contract Transactions {
         address receiver,
         uint amount,
         string message,
+        string keyword,
         uint256 timestamp
     );
 
@@ -17,6 +18,7 @@ contract Transactions {
         address receiver;
         uint amount;
         string message;
+        string keyword;
         uint256 timestamp;
     }
 
@@ -25,7 +27,8 @@ contract Transactions {
     function addToBlockchain(
         address payable receiver,
         uint amount,
-        string memory message
+        string memory message,
+        string memory keyword
     ) public {
         transactionCount += 1;
 
@@ -35,6 +38,7 @@ contract Transactions {
                 receiver,
                 amount,
                 message,
+                keyword,
                 block.timestamp
             )
         );
@@ -44,6 +48,7 @@ contract Transactions {
             receiver,
             amount,
             message,
+            keyword,
             block.timestamp
         );
     }
