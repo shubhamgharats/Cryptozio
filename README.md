@@ -55,7 +55,9 @@ Live Demo: [https://cryptozio.vercel.app/](https://cryptozio.vercel.app/)
 
 Core functions:
 -addToBlockchain
+
 -getAllTransactions
+
 -getTransactionCount
 
 Live Demo: [https://cryptozio.vercel.app/](https://cryptozio.vercel.app/)
